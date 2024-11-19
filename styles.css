@@ -1,0 +1,57 @@
+#about-me {
+  display: flex;
+  padding: 3rem;
+}
+
+#about-me .about-me-image {
+  width: 500px;
+  height: 600px;
+  position: relative;
+  box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
+  background-image: url("https://placehold.co/500x600");
+  flex-shrink: 0;
+}
+
+#about-me h1 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+  font-size: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -3rem;
+}
+
+#about-me .card {
+  margin: 3% 0;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#about-me .card h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#about-me .card p {
+  font-weight: 400;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+#about-me .card .icons {
+  display: flex;
+  justify-content: right;
+  font-size: 3rem;
+  gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
+}
