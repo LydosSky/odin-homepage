@@ -1,6 +1,14 @@
+#about-me,
+#my-work,
+#contact-me {
+  height: 90vh;
+}
+
 #about-me {
   display: flex;
   padding: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-me .about-me-image {
@@ -8,11 +16,13 @@
   height: 600px;
   position: relative;
   box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
-  background-image: url("https://placehold.co/500x600");
+  background-image: url("https://placehold.co/1000/a27f60/a27f60");
   flex-shrink: 0;
+  flex-basis: 45%;
 }
 
 #about-me h1 {
+  color: #ffffff;
   text-align: center;
   width: 100%;
   margin: 0;
