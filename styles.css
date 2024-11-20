@@ -1,8 +1,8 @@
-#about-me,
-#my-work,
-#contact-me {
-  height: 90vh;
-}
+/* #about-me, */
+/* #my-work, */
+/* #contact-me { */
+/*   height: 90vh; */
+/* } */
 
 #about-me {
   display: flex;
@@ -42,6 +42,8 @@
   gap: 2rem;
 }
 
+#contact-me h2,
+#my-work h2,
 #about-me .card h2 {
   margin: 0;
   font-size: 3rem;
@@ -64,4 +66,46 @@
 .card {
   background-color: white;
   box-shadow: 0px 0px 1rem 0px rgba(0, 0, 0, 0.75);
+}
+
+#my-work {
+  padding: 3rem;
+}
+
+#my-work .cards-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+#my-work .cards-container .card {
+  display: flex;
+  flex-direction: column;
+}
+
+#my-work .cards-container .card img {
+  flex-basis: 50%;
+  min-height: 15rem;
+  background-image: url("https://placehold.co/1000/c363b4/c363b4");
+}
+
+#my-work .cards-container .card .project-info {
+  padding: 1rem;
+}
+
+.project-info .project-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.project-info .project-header p {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.project-info .project-header i {
+  font-size: 2rem;
 }
