@@ -8,9 +8,10 @@
 }
 
 #about-me h1 {
+  width: max-content;
+  height: max-content;
   color: #ffffff;
   text-align: center;
-  width: 100%;
   margin: 0;
   font-weight: 400;
   font-size: 6rem;
@@ -131,6 +132,7 @@
   object-fit: cover;
 }
 
+/* mobile styles */
 @media (max-width: 767px) {
   #about-me .card {
     box-shadow: none;
@@ -227,5 +229,31 @@
 
   #my-work .cards-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktops */
+@media (min-width: 1024px) {
+  #about-me .card {
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 2rem;
+  }
+
+  #about-me h1 {
+    bottom: 19rem;
+    left: 24rem;
+  }
+
+  #about-me .card img {
+    float: left;
+    width: 35rem;
+    margin-left: -35%;
+    margin-top: -10%;
+    margin-right: 2rem;
+  }
+
+  #my-work {
+    margin-top: 10rem;
   }
 }
