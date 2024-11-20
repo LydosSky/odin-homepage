@@ -1,14 +1,13 @@
-/* #about-me, */
-/* #my-work, */
-/* #contact-me { */
-/*   height: 90vh; */
-/* } */
-
 #about-me {
   display: flex;
   padding: 3rem;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(
+    342deg,
+    rgba(255, 255, 255, 1) 40%,
+    rgba(8, 145, 178, 1) 29%
+  );
 }
 
 #about-me .about-me-image {
@@ -70,13 +69,16 @@
 
 #my-work {
   padding: 3rem;
+  margin: 5rem 0;
 }
 
 #my-work .cards-container {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #my-work .cards-container .card {
@@ -86,7 +88,7 @@
 
 #my-work .cards-container .card img {
   flex-basis: 50%;
-  min-height: 15rem;
+  min-height: 20rem;
   background-image: url("https://placehold.co/1000/c363b4/c363b4");
 }
 
@@ -108,4 +110,44 @@
 
 .project-info .project-header i {
   font-size: 2rem;
+}
+
+#contact-me {
+  background-color: #0891b2;
+}
+
+#contact-me .contact-me-container {
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: white;
+}
+
+.contact-left i {
+  font-size: 3rem;
+}
+
+.contact-left .container-mail,
+.contact-left .container-phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-right {
+  flex-basis: 75%;
+  text-align: right;
+  overflow: hidden;
+  height: 30rem;
+}
+
+.contact-me-container .contact-right img {
+  object-fit: cover;
 }
